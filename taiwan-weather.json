@@ -1,0 +1,14 @@
+{
+    "mcpServers": {
+        "taiwan-weather": {
+            "command": "npx",
+            "args": [
+                "-y",
+                "@gonetone/mcp-server-taiwan-weather"
+            ],
+                "env": {
+                "CWA_API_KEY": "CWA-B5E7308B-56CB-48B0-A1EE-D3179FC57968"
+            }
+        }
+    }
+}
