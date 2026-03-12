@@ -1,0 +1,28 @@
+{
+    "model": "xLAM-2-3b-fc-r",
+    "messages": [
+        {
+            "role": "system",
+            "content": "You are a helpful assistant."
+        },
+        {
+            "role": "user",
+            "content": ""
+        }
+    ],
+    "temperature": 0.0,
+    "tools": [
+        {
+            "name": "get_weather",
+            "description": "Get the current weather for a location",
+            "parameters": {
+                "type": "object",
+                "properties": {
+                    "location": {"type": "string", "description": "The city and state, e.g. San Francisco, CA"},
+                    "unit": {"type": "string", "enum": ["celsius", "fahrenheit"], "description": "The unit of temperature to return"}
+                },
+                "required": ["location"]
+            }
+        }
+    ]
+}
